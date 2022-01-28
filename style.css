@@ -1,61 +1,118 @@
-html,body{
-    margin: 0;
-    padding: 0;
+html,
+body {
+  margin: 0;
+  padding: 0;
 }
 
-*{
-    margin: 0;
-    padding: 0;
+* {
+  margin: 0;
+  padding: 0;
 }
 
 .home {
-    border: solid 1px black;
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
+  border: solid 1px black;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  height: 100%;
+  width: 100%;
 }
 
-.home__header-container{
-    border: solid 1px black;
-    display: flex;
-    justify-content: start;
-    align-items: center;
-    height: 400px;
-    width: 100%;
-    background: white
-    
+.home__header-container {
+  border: solid 1px black;
+  display: flex;
+  justify-content: start;
+  align-items: center;
+  height: 400px;
+  width: 100%;
+  background: white;
 }
 
-.home__header-content{
-    border: solid 1px blue;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    margin-left: 50px;
+.home__header-content {
+  border: solid 1px blue;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-left: 50px;
 }
 
-.home__title-container{
-    border: solid 1px red;
-    display: flex;
-    flex-direction: column ;
-    margin-left: 15px;
+.home__title-container {
+  border: solid 1px red;
+  display: flex;
+  flex-direction: column;
+  margin-left: 15px;
 }
 
 .home__name {
-    font-family: 'Source Sans Pro', sans-serif;
-    font-weight: 600;
-    font-size: 40px;
+  font-family: "Source Sans Pro", sans-serif;
+  font-weight: 600;
+  font-size: 40px;
 }
 
 .home__description {
-    font-family: 'Source Sans Pro', sans-serif;
-    font-weight: 400;
-    font-size: 20px;
+  font-family: "Source Sans Pro", sans-serif;
+  font-weight: 400;
+  font-size: 20px;
 }
 
-.home__image{
-    width: 300px;
-    border-radius: 50%;
+.home__image {
+  width: 300px;
+  border-radius: 50%;
+}
 
+.home__content-container {
+  border: solid 1px black;
+  display: flex;
+  justify-content: start;
+  align-items: start;
+  height: 100%;
+  width: 100%;
+  background: lightblue;
+}
+
+.home__content {
+  border: solid 1px yellow;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  width: 100%;
+  margin: 20px;
+}
+
+.home__left-container {
+  background: pink;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  padding: 30px;
+  width: 700px;
+  margin-right: 15px;
+}
+
+.home__right-container {
+  background: lavender;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  padding: 30px;
+  width: 300px;
+  margin-left: 15px;
+}
+
+.content__title {
+  font-family: "Source Sans Pro", sans-serif;
+  font-weight: 600;
+  font-size: 30px;
+  background-color: grey;
+}
+
+.content__description {
+  font-family: "Source Sans Pro", sans-serif;
+  font-weight: 400;
+  font-size: 20px;
+  padding: 5px;
+  color: black;
 }
