@@ -10,7 +10,7 @@ body {
 }
 
 .home {
-  border: solid 1px black;
+  /* border: solid 1px black; */
   display: flex;
   flex-direction: column;
   justify-content: center;
@@ -20,17 +20,18 @@ body {
 }
 
 .home__header-container {
-  border: solid 1px black;
+  /* border: solid 1px black; */
   display: flex;
   justify-content: start;
   align-items: center;
   height: 400px;
   width: 100%;
   background: white;
+  padding: 20px;
 }
 
 .home__header-content {
-  border: solid 1px blue;
+  /* border: solid 1px black; */
   display: flex;
   justify-content: center;
   align-items: center;
@@ -38,7 +39,7 @@ body {
 }
 
 .home__title-container {
-  border: solid 1px red;
+  /* border: solid 1px red; */
   display: flex;
   flex-direction: column;
   margin-left: 15px;
@@ -48,31 +49,34 @@ body {
   font-family: "Source Sans Pro", sans-serif;
   font-weight: 600;
   font-size: 40px;
+  color: #51614c;
 }
 
 .home__description {
   font-family: "Source Sans Pro", sans-serif;
-  font-weight: 400;
-  font-size: 20px;
+  font-weight: 500;
+  font-size: 25px;
 }
 
 .home__image {
   width: 300px;
   border-radius: 50%;
+  border: 5px solid #51614c;
+  padding: 2px;
 }
 
 .home__content-container {
-  border: solid 1px black;
+  /* border: solid 1px black; */
   display: flex;
   justify-content: start;
   align-items: start;
   height: 100%;
   width: 100%;
-  background: lightblue;
+  background: #b5c6b0;
 }
 
 .home__content {
-  border: solid 1px yellow;
+  /* border: solid 1px yellow; */
   display: flex;
   flex-direction: row;
   justify-content: center;
@@ -81,7 +85,7 @@ body {
 }
 
 .home__left-container {
-  background: pink;
+  background: white;
   display: flex;
   justify-content: center;
   align-items: center;
@@ -92,21 +96,32 @@ body {
 }
 
 .home__right-container {
-  background: lavender;
+  background: #91ac89;
   display: flex;
   justify-content: center;
   align-items: center;
   flex-direction: column;
-  padding: 30px;
+  padding: 20px;
   width: 300px;
   margin-left: 15px;
+}
+
+.content__title__highlight {
+  font-family: "Source Sans Pro", sans-serif;
+  font-weight: 600;
+  font-size: 30px;
+  background-color: lightgray;
+  padding: 10px;
+  color: #51614c;
 }
 
 .content__title {
   font-family: "Source Sans Pro", sans-serif;
   font-weight: 600;
   font-size: 30px;
-  background-color: grey;
+  /* background-color: lightgray; */
+  padding: 10px;
+  color: #51614c;
 }
 
 .content__description {
@@ -115,4 +130,5 @@ body {
   font-size: 20px;
   padding: 5px;
   color: black;
+  text-decoration: none;
 }
