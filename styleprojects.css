@@ -13,8 +13,8 @@ body {
   /* border: solid 5px black; */
   display: flex;
   flex-direction: column;
-  justify-content: center;
-  align-items: center;
+  /* justify-content: center; */
+  /* align-items: center; */
   height: 100%;
   width: 100%;
 }
@@ -25,7 +25,7 @@ body {
   justify-content: start;
   /* align-items: center; */
   height: 400px;
-  width: 100%;
+  /* width: 100%; */
   background: white;
   padding: 20px;
   top: 0;
