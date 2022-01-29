@@ -132,7 +132,7 @@ body {
   justify-content: start;
   align-items: center;
   flex-direction: column;
-  padding: 30px;
+  padding: 10px;
   width: 350px;
   margin-left: 15px;
   /* border: solid 2px red; */
@@ -140,9 +140,11 @@ body {
 
 .rightcontent {
   /* border: solid 2px black; */
+  display: flex;
+  flex-direction: column;
   justify-content: center;
   align-content: center;
-  margin-top: 30px;
+  margin-top: 60px;
 }
 
 .home__contentsecond {

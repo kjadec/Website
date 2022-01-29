@@ -268,3 +268,10 @@ body {
   width: 500px;
   margin: 20px 0px;
 }
+.classesrow {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-content: center;
+}
+}
