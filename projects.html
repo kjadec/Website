@@ -10,6 +10,7 @@
       href="https://fonts.googleapis.com/css2?family=Source+Sans+Pro:wght@400;600&display=swap"
       rel="stylesheet"
     />
+
     <title>Projects and Academics</title>
   </head>
   <body>
@@ -51,7 +52,18 @@
                 <span>&#183;</span>
                 <b> Year 3 </b>
               </p>
-              <p class="content__description">Design</p>
+              <p class="content__description">
+                In this project, I worked with a group of students to design an
+                Ultrasonic Range Finder utilizing many analog and digital
+                electronic components, as well as a piezoelectric transducer!
+                Some of these components include amplifiers, filters, 555 timers
+                and counters. The circuit functionality was demonstrated
+                utilizing NI multisim (the circuit design can be seen below).
+                With extensive debugging using lab equipment such as
+                oscilloscopes and wave form generators, the modular circuit was
+                produced.
+              </p>
+              <img class="image" src="assets/3BA4.png" />
             </div>
 
             <h1 class="content__title"></h1>
@@ -64,33 +76,68 @@
                 <span>&#183;</span>
                 <b> Year 2 </b>
               </p>
-              <p class="content__description">Design</p>
+              <p class="content__description">
+                For this project, I was able to design and produce a sequential
+                logic circuit to cycle through my 9-digit student number. With
+                logic optimization, simplifications were made and the circuit
+                was simulated using NI multisim. The final deliverable was the
+                functional circuit built with base-level electronics such as
+                logic gates, JK flip-slops, and a 7-segment display!
+              </p>
+              <img class="image" src="assets/2EMulti.png" />
             </div>
 
             <h1 class="content__title"></h1>
 
             <div class="home__full-inside">
               <p class="content__inside-title">
-                <b> Sequential Logic Design Project </b>
+                <b> Wearable Device </b>
                 <span>&#183;</span>
                 <b> Health Solutions Design Project </b>
                 <span>&#183;</span>
                 <b> Year 1 </b>
               </p>
-              <p class="content__description">Design</p>
+              <p class="content__description">
+                The "Stayin' Alive Driver Alertness Monitor" was designed and
+                developed using a Raspberry Pi, pressure sensors, and a
+                vibration motor! This device was developed with the intent to
+                minimize driving incidents due to fatigue by having drivers wear
+                an interactive device which was based on reaction time. The
+                housing unit was modelled using Autodesk Inventor. The design
+                was presented and demonstrated at a design expo!
+              </p>
+              <div class="twoimage">
+                <img class="imagesmall" src="assets/staying.png" /><img
+                  class="imagesmall"
+                  src="assets/alive.png"
+                />
+              </div>
             </div>
 
             <h1 class="content__title"></h1>
 
             <div class="home__full-inside">
               <p class="content__inside-title">
-                <b> Sequential Logic Design Project </b>
+                <b> Custom Hip Implant </b>
                 <span>&#183;</span>
                 <b> Health Solutions Design Project </b>
                 <span>&#183;</span>
                 <b> Year 1 </b>
               </p>
-              <p class="content__description">Design</p>
+              <p class="content__description">
+                For this project a customized hip implant was designed based on
+                a case study for a patient with hip dysplasia. Desgin parameters
+                were optimized with python, the design modelled with Autodesk
+                Inventor. The final poster is seen below which was presented at
+                a showcase!
+              </p>
+              <img class="image" src="assets/poster.png" />
+              <div class="twoimage">
+                <img class="imagesmall" src="assets/hipcad.jpg" /><img
+                  class="imagesmall"
+                  src="assets/cad.jpg"
+                />
+              </div>
             </div>
           </div>
         </div>
@@ -155,5 +202,52 @@
         </div>
       </div>
     </div>
+
+    <script>
+      // Open the Modal
+      function openModal() {
+        document.getElementById("myModal").style.display = "block";
+      }
+
+      // Close the Modal
+      function closeModal() {
+        document.getElementById("myModal").style.display = "none";
+      }
+
+      var slideIndex = 1;
+      showSlides(slideIndex);
+
+      // Next/previous controls
+      function plusSlides(n) {
+        showSlides((slideIndex += n));
+      }
+
+      // Thumbnail image controls
+      function currentSlide(n) {
+        showSlides((slideIndex = n));
+      }
+
+      function showSlides(n) {
+        var i;
+        var slides = document.getElementsByClassName("mySlides");
+        var dots = document.getElementsByClassName("demo");
+        var captionText = document.getElementById("caption");
+        if (n > slides.length) {
+          slideIndex = 1;
+        }
+        if (n < 1) {
+          slideIndex = slides.length;
+        }
+        for (i = 0; i < slides.length; i++) {
+          slides[i].style.display = "none";
+        }
+        for (i = 0; i < dots.length; i++) {
+          dots[i].className = dots[i].className.replace(" active", "");
+        }
+        slides[slideIndex - 1].style.display = "block";
+        dots[slideIndex - 1].className += " active";
+        captionText.innerHTML = dots[slideIndex - 1].alt;
+      }
+    </script>
   </body>
 </html>
