@@ -312,6 +312,9 @@ body {
   .home__contentsecond {
     width: 550px;
   }
+  .home__header-container {
+    justify-content: center;
+  }
 
   .home__header-content {
     flex-direction: column;
