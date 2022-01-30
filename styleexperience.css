@@ -256,9 +256,31 @@ body {
   align-content: center;
 }
 
-@media screen and (max-width: 1000px) {
+@media screen and (max-width: 1200px) {
   .home__contentsecond {
-    width: 500px;
+    width: 750px;
+  }
+
+  .home__header-content {
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    padding-bottom: 100px;
+  }
+
+  .home__title-container {
+    /* border: solid 5px red; */
+    display: flex;
+    flex-direction: column;
+    margin-left: 15px;
+    justify-content: center;
+    align-items: center;
+  }
+}
+
+@media screen and (max-width: 790px) {
+  .home__contentsecond {
+    width: 550px;
   }
 
   .home__header-content {
