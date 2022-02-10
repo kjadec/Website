@@ -267,6 +267,18 @@ body {
   align-content: center;
 }
 
+.skills {
+  font-family: "Source Sans Pro", sans-serif;
+  font-weight: 400;
+  font-size: 20px;
+  color: white;
+  justify-content: start;
+  flex-direction: row;
+  border-radius: 30%;
+  background-color: #91ac89;
+  padding: 8px;
+}
+
 @media screen and (max-width: 1200px) {
   .home__contentfirst {
     flex-direction: column;
